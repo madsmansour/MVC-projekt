@@ -19,10 +19,29 @@ namespace MVC_projekt.Controllers
             _context = context;
         }
 
-        // GET: Movies
-        public async Task<IActionResult> Index()
+        [HttpPost]
+        public string Index(string search, bool notUsed)
         {
-            return View(await _context.Movie.ToListAsync());
+            return "From HttpPost filter on: " + search;
+
+        }
+
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string movieGenre, string search)
+        {
+            IQueryable<string> genreQuery = from m in _context.Movie orderby m.Genre select m.Genre;
+            var movies = from m in _context.Movie select m;
+            if (!string.IsNullOrEmpty(search))
+            {
+                movies = movies.Where(s => s.Title.Contains(search));
+            }
+            if (!string.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(s => s.Genre == movieGenre);
+            }
+            var movieGenrevm = new MovieGenreViewModel { Genres = new SelectList(await genreQuery.Distinct().ToListAsync()), Movies = await movies.ToListAsync() };
+            return View(movieGenrevm);
         }
 
         // GET: Movies/Details/5
@@ -86,7 +105,7 @@ namespace MVC_projekt.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
         {
             if (id != movie.Id)
             {

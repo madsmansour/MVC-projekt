@@ -18,9 +18,9 @@ namespace MVC_projekt.Models
                 {
                     return;
                 }
-                context.Movie.AddRange(new Movie { Title = "Johhny Bravo", ReleaseDate = DateTime.Parse("1995-05-05"), Genre = "Cartoon", Price = 7.99M }, 
-                    new Movie { Title = "Johhny Alpha", ReleaseDate = DateTime.Parse("1991-05-05"), Genre = "Cartoon", Price = 9.99M },
-                    new Movie { Title = "Johhny Charlie", ReleaseDate = DateTime.Parse("1992-05-05"), Genre = "Cartoon", Price = 10.99M });
+                context.Movie.AddRange(new Movie { Title = "Johhny Bravo", ReleaseDate = DateTime.Parse("1995-05-05"), Genre = "Cartoon", Price = 7.99M, Rating = "R" }, 
+                    new Movie { Title = "Johhny Alpha", ReleaseDate = DateTime.Parse("1991-05-05"), Genre = "Cartoon", Price = 9.99M, Rating ="R" },
+                    new Movie { Title = "Johhny Charlie", ReleaseDate = DateTime.Parse("1992-05-05"), Genre = "Cartoon", Price = 10.99M, Rating ="R" });
                 context.SaveChanges();
 
             }

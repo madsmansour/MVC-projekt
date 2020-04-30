@@ -8787,25 +8787,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kfsai\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\mads_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\c#\\MVC-projekt\\MVC projekt.csproj",
+      "projectUniqueName": "C:\\Users\\mads_\\OneDrive\\Skrivebord\\Web development\\asp.net\\MVC projekt\\MVC projekt.csproj",
       "projectName": "MVC projekt",
-      "projectPath": "D:\\github\\c#\\MVC-projekt\\MVC projekt.csproj",
-      "packagesPath": "C:\\Users\\kfsai\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\c#\\MVC-projekt\\obj\\",
+      "projectPath": "C:\\Users\\mads_\\OneDrive\\Skrivebord\\Web development\\asp.net\\MVC projekt\\MVC projekt.csproj",
+      "packagesPath": "C:\\Users\\mads_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mads_\\OneDrive\\Skrivebord\\Web development\\asp.net\\MVC projekt\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kfsai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\mads_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
