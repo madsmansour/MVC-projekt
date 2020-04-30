@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "MVC projekt/1.0.0": {
         "dependencies": {
+          "GitHub": "1.22.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
@@ -305,6 +306,84 @@
         },
         "compile": {
           "MVC projekt.dll": {}
+        }
+      },
+      "Carbon.Data.Protection/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/Carbon.Data.Protection.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Carbon.Data.Protection.dll": {}
+        }
+      },
+      "Carbon.Packaging/1.38.1": {
+        "dependencies": {
+          "Carbon.Data.Protection": "1.1.0",
+          "Carbon.Storage": "2.0.1",
+          "Carbon.Versioning": "1.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Carbon.Packaging.dll": {
+            "assemblyVersion": "1.38.1.0",
+            "fileVersion": "1.38.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Carbon.Packaging.dll": {}
+        }
+      },
+      "Carbon.Storage/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.1/Carbon.Storage.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Carbon.Storage.dll": {}
+        }
+      },
+      "Carbon.VersionControl/2.0.1": {
+        "dependencies": {
+          "Carbon.Storage": "2.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.VersionControl.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.VersionControl.dll": {}
+        }
+      },
+      "Carbon.Versioning/1.6.0": {
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Versioning.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Versioning.dll": {}
+        }
+      },
+      "GitHub/1.22.0": {
+        "dependencies": {
+          "Carbon.Packaging": "1.38.1",
+          "Carbon.VersionControl": "2.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/GitHub.dll": {
+            "assemblyVersion": "1.22.0.0",
+            "fileVersion": "1.22.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/GitHub.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3956,6 +4035,48 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Carbon.Data.Protection/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eIL96K/aS/xSzKdhCubmy2H2ZxlIajtLUJTeBThYTl4wxoDNdQyFh8H2MPxzeyf9jhF7E9FpXdw8xuO9SJdmew==",
+      "path": "carbon.data.protection/1.1.0",
+      "hashPath": "carbon.data.protection.1.1.0.nupkg.sha512"
+    },
+    "Carbon.Packaging/1.38.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OFCgmSUI5YmeQqHP2qv1btrJnxsoNTLOwo08XWBZSN9Uf0Tq0DQUi4Rb5o2o1Po2GoKnlw3dS5gO9Oo2ILBiQQ==",
+      "path": "carbon.packaging/1.38.1",
+      "hashPath": "carbon.packaging.1.38.1.nupkg.sha512"
+    },
+    "Carbon.Storage/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6UHI+Q55WySfewpI5EXeex94cTcmxlXM2llZzNnhUzjoLr40hxzeoOSOTYpeWFuCzTiJHUSD4Md0WuPF+IZo8Q==",
+      "path": "carbon.storage/2.0.1",
+      "hashPath": "carbon.storage.2.0.1.nupkg.sha512"
+    },
+    "Carbon.VersionControl/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N8KPpVYWX8Cr5hny0eDfv5cvEuXQQn0JI5GQimBpr0Q+7FpVWifdJm4MvrqaWleF5fOCqzRnNWfYsEdFc0JFeA==",
+      "path": "carbon.versioncontrol/2.0.1",
+      "hashPath": "carbon.versioncontrol.2.0.1.nupkg.sha512"
+    },
+    "Carbon.Versioning/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z2uAaOPrxWyYCDbK/dJWGqpR7ZMX6BO9uF7pML2NrBqk3r17/fUQjV8NMYh5ATYDCBk94DH3IQr0w53/OCQZwQ==",
+      "path": "carbon.versioning/1.6.0",
+      "hashPath": "carbon.versioning.1.6.0.nupkg.sha512"
+    },
+    "GitHub/1.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ak59kGegfU83GNpxjZN31HPkWFe2CuqRf12mFbJEO7If0TRJcLfptoQLhH5yLPBIY1wBH7dqW3iYp+S3CYyBcw==",
+      "path": "github/1.22.0",
+      "hashPath": "github.1.22.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "type": "package",
